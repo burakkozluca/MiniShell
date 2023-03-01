@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: sciftci <sciftci@student.42kocaeli.com.tr> +#+  +:+       +#+         #
+#    By: bkozluca <bkozluca@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/02/28 04:30:05 by sciftci           #+#    #+#              #
-#    Updated: 2023/02/28 04:30:06 by sciftci          ###   ########.fr        #
+#    Updated: 2023/03/01 12:46:30 by bkozluca         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,8 +20,8 @@ CFLAGS		=	-Wall -Wextra -Werror -g
 
 
 READLINE 	=	-lreadline \
-				-L/goinfre/sciftci/homebrew/opt/readline/lib \
-				-I/goinfre/sciftci/homebrew/opt/readline/include
+				-L/goinfre/homebrew/opt/readline/lib \
+				-I/goinfre/homebrew/opt/readline/include
 
 SRCS		=	minishell.c\
 				0_builtins/env/env_expand.c \

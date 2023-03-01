@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   env_get_set.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sciftci <sciftci@student.42kocaeli.com.tr> +#+  +:+       +#+        */
+/*   By: bkozluca <bkozluca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/28 04:26:25 by sciftci           #+#    #+#             */
-/*   Updated: 2023/02/28 04:54:19 by sciftci          ###   ########.fr       */
+/*   Updated: 2023/03/01 13:05:27 by bkozluca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	is_env_defined(char *s)
 {
 	if (ft_isdigit(*s) || !is_env_char(*s++))
 		return (0);
-	while (*s)
+	while (is_env_char(*s))
 		s++;
 	if (*s == '=')
 		return (1);
